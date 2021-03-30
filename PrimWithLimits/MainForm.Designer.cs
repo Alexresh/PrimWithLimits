@@ -100,28 +100,28 @@ namespace PrimWithLimits
             // новыйToolStripMenuItem
             // 
             this.новыйToolStripMenuItem.Name = "новыйToolStripMenuItem";
-            this.новыйToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.новыйToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.новыйToolStripMenuItem.Text = "Новый";
             this.новыйToolStripMenuItem.Click += new System.EventHandler(this.НовыйToolStripMenuItem_Click);
             // 
             // загрузитьToolStripMenuItem
             // 
             this.загрузитьToolStripMenuItem.Name = "загрузитьToolStripMenuItem";
-            this.загрузитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.загрузитьToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.загрузитьToolStripMenuItem.Text = "Загрузить";
             this.загрузитьToolStripMenuItem.Click += new System.EventHandler(this.ЗагрузитьToolStripMenuItem_Click);
             // 
             // сохранитьToolStripMenuItem
             // 
             this.сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
-            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.сохранитьToolStripMenuItem.Text = "Сохранить";
             this.сохранитьToolStripMenuItem.Click += new System.EventHandler(this.СохранитьToolStripMenuItem_Click);
             // 
             // выходAltF4ToolStripMenuItem
             // 
             this.выходAltF4ToolStripMenuItem.Name = "выходAltF4ToolStripMenuItem";
-            this.выходAltF4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.выходAltF4ToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.выходAltF4ToolStripMenuItem.Text = "Выход Alt+F4";
             this.выходAltF4ToolStripMenuItem.Click += new System.EventHandler(this.ВыходAltF4ToolStripMenuItem_Click);
             // 
@@ -221,7 +221,7 @@ namespace PrimWithLimits
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.status});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 330);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 291);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(669, 22);
             this.statusStrip1.TabIndex = 10;
@@ -247,7 +247,7 @@ namespace PrimWithLimits
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(669, 352);
+            this.ClientSize = new System.Drawing.Size(669, 313);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.AutoCalc);
             this.Controls.Add(this.label2);
@@ -259,11 +259,13 @@ namespace PrimWithLimits
             this.Controls.Add(this.picOutGraph);
             this.Controls.Add(this.calculateBtn);
             this.Controls.Add(this.menu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menu;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainForm";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Алгоритм Прима при ограничениях на локальные степени вершин";
             this.Shown += new System.EventHandler(this.MainForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.picOutGraph)).EndInit();
