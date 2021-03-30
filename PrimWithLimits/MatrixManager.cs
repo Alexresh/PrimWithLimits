@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PrimWithLimits
 {
@@ -51,13 +48,8 @@ namespace PrimWithLimits
             int x = Array.IndexOf(GetRow(m, y), min);
 
 
-            Position position = new Position
-            {
-                X = x,
-                Y = y
-            };
 
-            return position;
+            return new Position(x, y);
 
         }
 

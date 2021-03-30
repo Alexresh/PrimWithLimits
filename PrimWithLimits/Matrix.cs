@@ -4,11 +4,7 @@ namespace PrimWithLimits
 {
     class Matrix
     {
-        private int[,] matrix = { {0, 6, 5, 4,  6 },
-                                  {6, 0, 8, 10, 8 },
-                                  {5, 8, 0, 6,  11 },
-                                  {4, 10, 6, 0, 7 },
-                                  {6, 8, 11, 7, 0 } };
+        private int[,] matrix;
         /*private int[,] matrix = { {0, 3, 7, 2,  6 , 1 },
                                   {3, 0, 1, 3, 9, 6 },
                                   {7, 1, 0, 3, 5, 9 },
@@ -23,7 +19,12 @@ namespace PrimWithLimits
 
         public Matrix() 
         {
-        
+            matrix = new int[3, 3];
+        }
+
+        public Matrix(int[,] matrix) 
+        {
+            this.matrix = matrix.Clone() as int[,];
         }
 
         public int[,] GetMatrix()
